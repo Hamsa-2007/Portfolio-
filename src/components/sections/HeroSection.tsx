@@ -111,11 +111,11 @@ export const HeroSection: React.FC<HeroSectionProps> = ({ onScrollTo }) => {
               <div className="relative mx-auto w-48 h-48 sm:w-56 sm:h-56 rounded-2xl p-1 bg-gradient-to-tr from-purple-500 via-blue-500 to-amber-400 shadow-xl shadow-purple-500/20 mb-6 group">
                 <div className="w-full h-full rounded-[14px] overflow-hidden bg-slate-950 relative">
                   <img
-                    src="/profile.png"
+                    src={`${import.meta.env.BASE_URL}profile.png`}
                     alt={PERSONAL_INFO.name}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                     onError={(e) => {
-                      e.currentTarget.src = '/image.png';
+                      e.currentTarget.src = `${import.meta.env.BASE_URL}image.png`;
                     }}
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-slate-950/60 via-transparent to-transparent pointer-events-none" />

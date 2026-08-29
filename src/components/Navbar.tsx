@@ -112,7 +112,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
               <LinkedinIcon className="w-4 h-4" />
             </a>
             <a
-              href="/Hamsa_Resume.pdf"
+              href={`${import.meta.env.BASE_URL}Hamsa_Resume.pdf`}
               target="_blank"
               rel="noreferrer"
               className="flex items-center gap-2 px-4 py-2 rounded-xl bg-gradient-to-r from-purple-600 to-blue-600 hover:from-purple-500 hover:to-blue-500 text-white text-xs font-semibold shadow-lg shadow-purple-500/20 hover:shadow-purple-500/35 transition-all hover:scale-105"
@@ -182,7 +182,7 @@ export const Navbar: React.FC<NavbarProps> = ({ activeSection, onNavigate }) => 
                 </a>
               </div>
               <a
-                href="/Hamsa_Resume.pdf"
+                href={`${import.meta.env.BASE_URL}Hamsa_Resume.pdf`}
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 px-4 py-2.5 rounded-xl bg-purple-600 text-white text-xs font-semibold"
